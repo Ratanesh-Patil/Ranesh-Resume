@@ -1,25 +1,64 @@
-body {margin:0;}
+body {
+  height:100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: aliceblue;
+}
 
 .icon-bar {
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(105, 195, 236, 0.1);
   overflow: auto;
 }
 
 .icon-bar a {
-  float: left;
-  width: 10%;
+  float: right;
+  width: 8%;
   text-align: center;
   padding: 12px 0;
   transition: all 0.3s ease;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .icon-bar a:hover {
   background-color: darkgrey;
 }
+.bg-image
+{
+  background-image: url('cool-background.svg');
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ }
+ .card{
+  height: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+ }
+ #pro-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  align-items: center;
 
-/* .active {
-  background-color: #2b222d;
-} */
+ }
+ .about{
+  
+  background-color: rgb(219, 240, 244);
+  padding: 4%;
+ }
