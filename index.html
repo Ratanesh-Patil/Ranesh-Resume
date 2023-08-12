@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 </head>
 <body>
-   
-    <header>
-        <h1>Software Developer Portfolio</h1>
-   
-        <div class="icon-bar">
-            <a href="#Home">HOME</a> 
-            <a href="#aboutus">ABOUT</a> 
-            <a href="#skills">SKILLS</a> 
-            <a href="#project">PROJECT</a>
-            <a href="#ContactUS">CONTACT</a> 
-        </div>
-    </header>
-
           <section id="Home">
           <div class="bg-image">
+            <div class="icon-bar">
+                <a href="#Home">HOME</a> 
+                <a href="#aboutus">ABOUT</a> 
+                <a href="#skills">SKILLS</a> 
+                <a href="#project">PROJECT</a>
+                <a href="#ContactUS">CONTACT</a> 
+            </div>
            <div class="card">
             <img src="profile.png" alt="" style="width: 300px; height: 300px; padding-right: 60px;">
             <div>
@@ -36,6 +31,7 @@
            </div> -->
           </div>
         </section>
+        
         <section id="skills">
         <h1 style="font-size: 35px; text-align: center;" >SKILLS</h1>
             <div class="main">
@@ -73,6 +69,7 @@
                 </div>
             </div>
         </section>
+   
         <section id="aboutus">
             <div class="about">
                 <h1 style="font-size: 35px; text-align: center;">ABOUT ME</h1>
@@ -87,6 +84,7 @@
             
             </div>
         </section>
+     
         <section id="project">
             <div class="proj">
                 <h1 style="font-size: 35px; text-align: center;">PROJECTS</h1>
@@ -115,20 +113,40 @@
             
             </div>
         </section>
+     
         <section id="education">
             
         </section>
+      
         <section id="ContactUS">
-            <div>
+            <div class="contactus">
                 <h1 style="font-size: 35px; text-align: center;">CONTACT ME</h1>
+                <div class="inner-card">
+                    <form action="ratnesh.k.patil@gmail.com">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="australia">India</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
             </div>
         </section>
+    
         <footer>
             <div class="footer">
-                <a class="fa fa-linkedin" href=""></a>
-                <a class="fa fa-instagram" href=""></a>
-                <a class="fa fa-github" href=""></a>
-                <a class="fa fa-twitter" href=""></a>
+                <a target="_blank" class="fa fa-linkedin" href=""></a>
+                <a target="_blank" class="fa fa-instagram" href=""></a>
+                <a target="_blank" class="fa fa-github" href="https://github.com/Ratanesh-Patil"></a>
+                <a target="_blank" class="fa fa-twitter" href=""></a>
             </div>
             <div class="foot-div">
               <small >@2023 copyright : Ratnesh Patil</small>
