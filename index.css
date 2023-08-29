@@ -6,11 +6,24 @@ html{
 body {
   font-family: 'Titillium Web';
   margin: 0;
-  color: #fff;
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #0a0a0a;
+  background: #ece9e6;
+  /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);   */
+  /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
   line-height: 1.2;
+}
+.dark--btn{
+  width: 8rem;
+  height: 1rem;
+  border: .4rem solid black;
+  border-radius: 1rem;
+  padding: 1.0rem;
+  cursor: pointer;
+  float: left;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+ 
 }
 .icon-bar {
   width:100%;
@@ -22,10 +35,11 @@ body {
   float: right;
   width:11rem;
   text-align: center;
+  text-decoration: none;
   padding: 1.0rem 0;
   transition: all 0.3s ease;
-  color: whitesmoke;
-  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
@@ -33,7 +47,7 @@ body {
   background-color: grey;
 }
 .btn {
-  background-color: rgba(69, 69, 70, 0.751);
+  /* background-color: rgba(69, 69, 70, 0.751); */
   border: none;
   padding: 1.0rem 2.4rem;
   cursor: pointer;
@@ -41,11 +55,11 @@ body {
   border-radius: 1.0rem;
 }
 .btn a{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .bg-image
 {
-  background-image: url('cool-background.svg');
+  /* background-image: url('cool-background.svg'); */
   height: 50.0rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,14 +128,17 @@ body {
   justify-content: space-between;
   align-items: center;
  }
- .about-profile img{
+ .about-profile-img{
   width: 20.0rem;
   height: 25.0rem;
   margin: 5.0rem;
  }
  .about-p{
+  /* width: ;
+  height: ; */
   padding: 2rem;
   font-size: 2.0rem;
+
  }
  .container-out{
     padding: 4.0rem;
@@ -177,8 +194,8 @@ body {
 input[type=text], select, textarea {
   width: 100%;
   padding: 1.2rem;
-  background-color: #747474;
-  border: .1rem solid #747474;
+  background-color: #ffffff;
+  border: .1rem solid #2a2a2a;
   border-radius: .5rem;
   margin-top: .6rem;
   margin-bottom: 1.6rem;
@@ -208,7 +225,7 @@ form label{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(115, 115, 115);
+  /* background-color: rgb(115, 115, 115); */
  height: 12.0rem;
  }
  .footer > a {
@@ -217,9 +234,10 @@ form label{
   color: black;
  }
  .foot-div {
+  font-size: 2rem;
   display: flex;
   justify-content: center;
-  background-color: rgb(115, 115, 115);
+  /* background-color: rgb(115, 115, 115); */
  }
  small{
   margin-bottom: 1.0rem;
@@ -240,6 +258,13 @@ form label{
   padding: 2.5rem;
   justify-content: space-evenly;
  }
+ 
+
+ .dark-mode {
+  background-color: #0a0a0a;
+  background: linear-gradient(315deg, #2d3436 0%, #000000 74%); 
+  color: white;
+}
 
 
  @media  (max-width : 500px) {
@@ -249,7 +274,7 @@ form label{
       }
 }
 
-@media  (max-width : 400px) {
+@media  (max-width : 300px) {
   html{
     font-size: 30%;
     
